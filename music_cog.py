@@ -64,6 +64,7 @@ class music_cog(commands.Cog):
             await ctx.send("> Connect to a voice channel!")
         else:
             song = self.search_yt(query)
+            
             if isinstance(song, bool):
                 await ctx.send("> Could not download the song. Incorrect format try another keyword. This could be due to playlist or a livestream format.")
             else:

@@ -15,7 +15,7 @@ class image_cog(commands.Cog):
         self.response = google_images_download.googleimagesdownload()
         self.arguments = {
             "keywords": self.keywords, 
-            "limit":10,
+            "limit":15,
             "size":"medium",
             "no_directory": True
             }
